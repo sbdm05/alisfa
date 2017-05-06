@@ -1,0 +1,18 @@
+#utiles_header, #main-nav, .sidebar1, .sidebar2, .retour_haut_page, .numerotation, footer {
+	display: none;
+}
+header {}
+.container {
+	width: 170mm;
+}
+#logo {}
+#barrePage {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.principale, .unique, .principale-sans_sb1, .principale-sans_sb2 {
+	width: 100%;
+}
+#main {
+	padding: 0px;
+}

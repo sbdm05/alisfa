@@ -1,0 +1,49 @@
+/* ============== Structure ============== */
+.bande {
+}
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0px auto;
+	padding: 0px;
+}
+.colonne {
+	float: left;
+	display: inline;
+}
+.unique {
+	width: 960px;
+}
+.sidebar1 {
+	width: 200px;
+}
+.sidebar2 {
+	width: 230px;
+}
+.principale {
+	width: 530px;
+}
+.principale-sans_sb1 {
+	width: 730px;
+}
+.principale-sans_sb2 {
+	width: 760px;
+}
+/* ============== Clearing ============== */
+/* Self Clearing Goodness */
+.container:after {
+	content: "\0020";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}

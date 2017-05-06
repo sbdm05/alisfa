@@ -1,0 +1,20 @@
+/*** styles sélectionnables ***/
+
+.texte_bleu {
+	color: #0A95A9;
+}
+.texte_orange {
+	color: #F8B222;
+}
+.texte_vert {
+	color: #6EB338;
+}
+.texte_rouge {
+	color: #A84D6F;
+}
+.chapo {
+	color: #0A95A9;
+	font-size: 18px;
+	line-height: 1.3em;
+	font-weight: bold;
+}
