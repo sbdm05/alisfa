@@ -8,13 +8,14 @@
 
   <div class="carte">
   <?php echo do_shortcode( '[wpgmza id="1"]' ); ?>
+  </div>
 
     <div class="saisie_recherche_carte">
 
       <!--<img src="images/carte_google.jpg" />-->
 
     </div>
-  </div>
+
 
 
 
