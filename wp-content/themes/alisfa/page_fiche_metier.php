@@ -6,49 +6,6 @@
 get_header(); ?>
 
 
-
-
-<body id="">
-<div class="container">
-  <header id="haut_page">
-    <div id="utiles_header">
-      <a href="000.php" id="facebook_header"></a><a href="000.php" id="video_header"></a>
-    </div>
-    <div id="logo"><a href="<?php echo site_url(); ?>">Les métiers <strong>de la petite enfance</strong></a></div>
-  </header>
-</div>
-
-<div class="container">
-  <!-- Menu principal -->
-  <nav id="main-nav" role="navigation">
-
-    <!-- Bouton bascule pour mobile (hamburger/x icon) -->
-    <input id="main-menu-state" type="checkbox" />
-    <label class="main-menu-btn" for="main-menu-state"><span class="main-menu-btn-icon"></span>Bascule d'affichage du menu</label>
-
-    <!-- Sample menu definition -->
- <?php
-      wp_nav_menu( array(
-      'theme_location' => 'menu-1',
-      'menu_id'        => 'main-menu',
-      'menu_class'     =>'sm sm-blue',
-      'container'     => 'ul'
-      ));
-      ?>
-  </nav>
-</div>
-
-<div class="bande">
-  <div class="container">
-    <!-- Contenu de la page -->
-    <div id="page" class="page_avec_sb2">
-<!-- DECOUPE PHP - Fin de "inc_haut - début de "inc_barrepage" -->
-      <div id="barrePage">
-        <div id="chemin">
-          <?php the_breadcrumb(); ?>
-        </div>
-      </div><!-- Fin barrePage -->
-<!-- DECOUPE PHP - Fin de "inc_barrepage" - début du contenu principal -->
       <!-- Colonne principale -->
       <section class="colonne principale-sans_sb1">
         <div id="main">
