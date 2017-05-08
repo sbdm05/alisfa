@@ -45,7 +45,7 @@ get_header(); ?>
 <!-- DECOUPE PHP - Fin de "inc_haut - début de "inc_barrepage" -->
       <div id="barrePage">
         <div id="chemin">
-          <a href="index.php">Accueil /</a> <a href="000.php">Chemin /</a> Page actuel
+          <?php the_breadcrumb(); ?>
         </div>
       </div><!-- Fin barrePage -->
 <!-- DECOUPE PHP - Fin de "inc_barrepage" - début du contenu principal -->

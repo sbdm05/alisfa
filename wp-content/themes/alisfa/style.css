@@ -43,10 +43,6 @@ footer #menuAnnexe1 > ul > li:nth-of-type(4) > a {
 
 
 
-.wpgmza_sl_search_button [value]{
-  display: none;
-}
-
 #wpgmza_map{
   margin-top: -29px;
 }
@@ -69,6 +65,7 @@ cursor: pointer;
   padding: 0 15px;
 }
 .wpgmza_sl_main_div input[type="button"] {
+  color: #15748F;
   background: #15748F;
   border: none;
   height: 40px;
@@ -76,12 +73,13 @@ cursor: pointer;
   margin-left: 10px;
   float: left;
   border-radius: 0;
-  background-image: url("<?php echo get_template_directory_uri(); ?>/images/picto_cible.png");
+  background-image: url("<?php echo get_template_directory_uri(); ?>/images/picto_cible.png")!important;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .wpgmza_sl_main_div input[type="button"]:hover {
+  color: #15748F;
     background: #15748F;
   border: none;
   height: 40px;
@@ -93,4 +91,8 @@ cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+#breadcrumbs li.separator{
+  display: inline;
+  color:#B4B4B4;
 }
