@@ -92,6 +92,10 @@ cursor: pointer;
   background-position: center center;
 }
 
+.wpgmza_sl_search_button{
+  background-image: url("<?php echo get_template_directory_uri(); ?>/images/picto_cible.png");
+}
+
 #breadcrumbs li.separator{
   display: inline;
   color:#B4B4B4;

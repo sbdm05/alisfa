@@ -10,7 +10,7 @@
 
 <meta http-equiv="Content-language" content="fr" />
 <meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
-<title><?php bloginfo('name'); ?></title>
+<title><?php bloginfo('name'); ?> » <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 <meta name="description" content="<?php bloginfo('description'); ?>" />
 <meta name="language" content="fr" />
 <meta name="copyright" content="MA SOCIETE" />
@@ -123,6 +123,7 @@
   </nav>
 </div>
 
+<?php if (!is_front_page()): ?>
 <div class="bande">
   <div class="container">
     <!-- Contenu de la page -->
@@ -134,3 +135,4 @@
         </div>
       </div><!-- Fin barrePage -->
 <!-- DECOUPE PHP - Fin de "inc_barrepage" - début du contenu principal -->
+<?php endif; ?>
