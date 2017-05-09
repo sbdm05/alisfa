@@ -97,7 +97,21 @@
 <div class="container">
   <header id="haut_page">
     <div id="utiles_header">
-      <a href="000.php" id="facebook_header"></a><a href="000.php" id="video_header"></a>
+
+      <?php if(get_theme_mod('lien_fb', 'http://www.facebook.fr') !=''): ?>
+
+          <a href="<?php echo get_theme_mod('lien_fb', 'http://www.facebook.fr'); ?>" id="facebook_header">
+          </a>
+
+      <?php endif; ?>
+
+      <?php if(get_theme_mod('lien_video', 'http://www.youtube.fr') !=''): ?>
+
+          <a href="<?php echo get_theme_mod('lien_video', 'http://www.youtube.fr'); ?>" id="video_header">
+          </a>
+
+      <?php endif; ?>
+
     </div>
     <div id="logo"><a href="<?php echo site_url(); ?>">Les métiers <strong>de la petite enfance</strong></a></div>
   </header>

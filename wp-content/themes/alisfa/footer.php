@@ -3,7 +3,20 @@
   <footer>
     <div class="titre_footer">Les métiers <strong>de la petite enfance</strong></div>
     <div id="utiles_footer">
-      <a href="000.php" id="facebook_footer"></a><a href="000.php" id="video_footer"></a>
+       <?php if(get_theme_mod('lien_fb', 'http://www.facebook.fr') !=''): ?>
+
+          <a href="<?php echo get_theme_mod('lien_fb', 'http://www.facebook.fr'); ?>" id="facebook_footer">
+          </a>
+
+      <?php endif; ?>
+
+      <?php if(get_theme_mod('lien_video', 'http://www.youtube.fr') !=''): ?>
+
+          <a href="<?php echo get_theme_mod('lien_video', 'http://www.youtube.fr'); ?>" id="video_footer">
+          </a>
+
+      <?php endif; ?>
+
     </div>
   <div id="menuAnnexe1">
         <?php

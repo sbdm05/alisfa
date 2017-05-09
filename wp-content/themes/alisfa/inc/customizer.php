@@ -403,6 +403,37 @@ $wp_customize-> add_section('video4', array(
                     'priority'=>4
                    )));
 
+$wp_customize-> add_section('liens_sociaux', array(
+    'title'      => __('Liens Sociaux', 'alisfa'),
+    'description' => sprintf(__('Ajouter vos liens sociaux ici', 'alisfa')),
+     'priority'=>4,
+    ));
+                  // Lien Facebook Setting
+                  $wp_customize->add_setting('lien_fb', array(
+                  'default'=>sprintf(__('http://www.facebook.com', 'alisfa')),
+                  'type'=>'theme_mod',
+                  'sanitize_callback' =>  'alisfa_text_sanitize',
+                  ));
+                  // Lien Facebook Control
+                  $wp_customize->add_control('lien_fb', array(
+                  'label' =>__('Lien Facebook', 'alisfa'),
+                  'section'=>'liens_sociaux',
+                  'priority' =>1
+                  ));
+
+                  // Lien Vidéo Setting
+                  $wp_customize->add_setting('lien_video', array(
+                  'default'=>sprintf(__('http://www.youtube.com', 'alisfa')),
+                  'type'=>'theme_mod',
+                  'sanitize_callback' =>  'alisfa_text_sanitize',
+                  ));
+                  // Lien Facebook Control
+                  $wp_customize->add_control('lien_video', array(
+                  'label' =>__('Lien Vidéo', 'alisfa'),
+                  'section'=>'liens_sociaux',
+                  'priority' =>1
+                  ));
+
 }
 
 add_action('customize_register', 'alisfa_customizer_options');
