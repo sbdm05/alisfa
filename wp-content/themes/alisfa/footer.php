@@ -29,7 +29,7 @@
       ));
       ?>
 
-        <li><a href="000.php">Mentions légales</a></li>
+        <li><center><a href="000.php">Mentions légales</a></center></li>
       </ul>
     </div>
     <div id='menuAnnexe2'>

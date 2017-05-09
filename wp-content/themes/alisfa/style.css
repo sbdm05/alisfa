@@ -16,37 +16,18 @@ li .bouton_quiz_sb2 {
 }
 
 
-
-/*footer #menuAnnexe1 > ul > li:nth-of-type(1) > a {
-  width: 245px!important;
-}
-footer #menuAnnexe1 > ul > li:nth-of-type(2) > a {
-  width: 245px!important;
-}
-footer #menuAnnexe1 > ul > li:nth-of-type(3) > a {
-  width: 355px!important;
-}
-footer #menuAnnexe1 > ul > li:nth-of-type(4) > a {
-  width: 360px!important;
-}
-*/
-
-/******STORE LOCATOR STYLING **********/
-
+/******STORE LOCATOR STYLE **********/
 
 .wpgmza_sl_main_div{
   position: absolute;
   z-index:9999;
   padding-top: 25px;
-
+  padding-left: 8.5%;
 }
-
-
 
 #wpgmza_map{
   margin-top: -29px;
 }
-
 
 .wpgmza_sl_main_div label{
 font-size: 20px;
@@ -54,6 +35,7 @@ color: #FFF;
 margin-bottom: 10px;
 cursor: pointer;
 }
+
 .wpgmza_sl_main_div input[type="text"] {
   background-color: #FFF;
   border: none;
@@ -64,6 +46,7 @@ cursor: pointer;
   float: left;
   padding: 0 15px;
 }
+
 .wpgmza_sl_main_div input[type="button"] {
   color: #15748F;
   background: #15748F;
@@ -91,10 +74,22 @@ cursor: pointer;
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-.wpgmza_sl_search_button{
-  background-image: url("<?php echo get_template_directory_uri(); ?>/images/picto_cible.png");
+/*Remove Radius Button*/
+.wpgmza_sl_radius_div{
+  display: none;
 }
+
+/*Place Submit Button*/
+.wpgmza_sl_query_div{
+  float: left;
+  position: relative;
+}
+.wpgmza_sl_search_button{
+  position: absolute;
+  top: 59px;
+}
+
+/*BREADCRUMB STYLE*/
 
 #breadcrumbs li.separator{
   display: inline;

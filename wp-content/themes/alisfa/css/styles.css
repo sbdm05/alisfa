@@ -1,22 +1,22 @@
 /* ============== Général ============== */
-/* Personnalisation du placeholder 
-::-webkit-input-placeholder { /* WebKit browsers 
+/* Personnalisation du placeholder
+::-webkit-input-placeholder { /* WebKit browsers
 	color: #666 !important;
 	opacity: 1 !important;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18
     color: #666 !important;
     opacity: 1 !important;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ 
+::-moz-placeholder { /* Mozilla Firefox 19+
     color: #666 !important;
     opacity: 1 !important;
 }
-[placeholder]:-ms-input-placeholder { /* Internet Explorer 10+ 
+[placeholder]:-ms-input-placeholder { /* Internet Explorer 10+
     color: #666 !important;
     opacity: 1 !important;
 }
-.placeholdersjs { /* Anciens navigateurs 
+.placeholdersjs { /* Anciens navigateurs
     color: #666 !important;
 }*/
 @font-face {
@@ -119,7 +119,7 @@ header {
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);	
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 .conteneur_messages_slide {
@@ -460,7 +460,7 @@ header {
 /* ============== Colonne de droite ============== */
 .sidebar2 {
 	line-height: 1.1em;
-	background-color: #F2F2F2;	
+	background-color: #F2F2F2;
 }
 .masque_col_sb2 {
 	background-color: #FFF;
@@ -480,7 +480,7 @@ header {
 	position: relative;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);	
+	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 .temoignages_sb2, .presentation_sb2 {
@@ -576,7 +576,7 @@ header {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	
+
 }
 .legende_cadre_video_temoignage, .legende_cadre_video_presentation {
 	font-size: 20px;
@@ -704,7 +704,7 @@ header {
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);	
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 .saisie_recherche_carte {

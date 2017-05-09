@@ -57,9 +57,6 @@ function alisfa_setup() {
   register_nav_menus( array(
     'menu-1'           => esc_html__( 'Principal', 'alisfa' ),
     'menu-footer-branche' => esc_html__( 'Menu Présentation Branche', 'alisfa' ),
-    'menu-footer-secteur' => esc_html__( 'Menu Découvrir le Secteur', 'alisfa' ),
-    'menu-footer-metiers' => esc_html__( 'Menu Métiers Petite Enfance', 'alisfa' ),
-
   ) );
 
   /*
@@ -112,15 +109,6 @@ function alisfa_widgets_init() {
      'before-widget'=> '<a class="bouton_quiz_sb2">',
     'after_widget'  => '</a>',
   ) );
-    register_sidebar( array(
-    'name'          => __( 'Footer Gauche', 'alisfa' ),
-    'id'            => 'footer-gauche',
-    'description'   => __( 'Ajouter votre menu ici', 'alisfa' ),
-    'before_title'  => '<a>',
-    'items_spacing' => 'discard'
-  ) );
-
-
 
 }
 add_action( 'widgets_init', 'alisfa_widgets_init' );
@@ -176,7 +164,15 @@ function the_breadcrumb() {
  */
 
 function alisfa_scripts() {
-  wp_enqueue_script( 'meta-box-image', get_template_directory_uri() . '/inc/meta-box-image.js', array( 'jquery' ), '20150330', true );
+  wp_enqueue_script( 'meta-box-image', get_template_directory_uri() . '/inc/meta-box-image.js', array(), '1.0.0', true );
+  wp_enqueue_style( 'alisfa_style', get_stylesheet_uri());
+  wp_enqueue_style( 'alisfa_style_base', get_template_directory_uri() . '/css/base.css');
+  wp_enqueue_style( 'alisfa_style_editor-style', get_template_directory_uri() . '/css/editor-style.css');
+  wp_enqueue_style( 'alisfa_style_impression', get_template_directory_uri() . '/css/impression.css');
+  wp_enqueue_style( 'alisfa_style_rwd', get_template_directory_uri() . '/css/rwd.css');
+  wp_enqueue_style( 'alisfa_style_smartmenus', get_template_directory_uri() . '/css/smartmenus.css');
+  wp_enqueue_style( 'alisfa_style_structure', get_template_directory_uri() . '/css/structure.css');
+  wp_enqueue_style( 'alisfa_style_styles', get_template_directory_uri() . '/css/styles.css');
 }
 add_action( 'wp_enqueue_scripts', 'alisfa_scripts' );
 
