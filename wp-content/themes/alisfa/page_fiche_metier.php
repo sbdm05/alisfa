@@ -41,9 +41,6 @@ get_header(); ?>
 
         <hr />
 
-       <?php if(is_active_sidebar('sidebar-3')): ?>
-          <?php dynamic_sidebar('sidebar-3'); ?>
-        <?php endif; ?>
 
 
         <a href="000.php" class="bouton_quiz_sb2">Testez vos connaissances</a>
