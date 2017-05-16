@@ -36,6 +36,7 @@
 <link type="text/css" rel="stylesheet" id="impression-css" href="<?php echo get_template_directory_uri(); ?>/css/impression.css" media="print" />
 <link type="text/css" rel="stylesheet" id="fancybox-css" href="<?php echo get_template_directory_uri(); ?>/javascript/jquery_lib/fancybox/jquery.fancybox.css" media="screen" />
 
+
 <!-- Javascripts
 ================================================== -->
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/javascript/jquery_lib/jquery.js?ver=1.12.4'></script>
@@ -52,6 +53,8 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/javascript/jquery_lib/repliable.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/javascript/jquery_lib/jquery.smartmenus.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/javascript/jquery_lib/jquery.smartmenus-addon.js"></script>
+
+<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
 <script type="text/javascript">
   jQuery.noConflict();
