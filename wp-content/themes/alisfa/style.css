@@ -88,6 +88,95 @@ cursor: pointer;
   top: 59px;
 }
 
+/* ============== Media Queries ============== */
+
+/* ============== Tablettes ============== */
+@media only screen and (min-width: 768px) and (max-width: 1059px) {
+/* Carte style Google */
+.bande_recherche_carte {
+  height: 300px;
+  margin: 0px 0px 40px;
+}
+.titre_recherche_carte {
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+}
+.saisie_recherche_carte form {
+  right: 40px;
+  top: 20px;
+}
+.wpgmza_sl_main_div label {
+    font-size: 15px;
+}
+.wpgmza_sl_main_div input[type="text"]  {
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+  padding: 0 11px;
+}
+.wpgmza_sl_main_div input[type="button"] {
+  height: 30px;
+  width: 30px;
+  background-size: 75%;
+  top:54px
+}
+.wpgmza_sl_main_div input[type="button"]:hover {
+  height: 30px;
+  width: 30px;
+  background-size: 75%;
+  top:54px
+}
+}
+
+/* ============== Smartphones ============== */
+@media only screen and (max-width: 767px) {
+/* Carte style Google */
+.bande_recherche_carte {
+  height: auto;
+}
+.titre_recherche_carte {
+  font-size: 20px;
+  line-height: 1.1em;
+  padding: 8px 10px;
+  height: auto;
+}
+.saisie_recherche_carte {
+  height: 100px;
+  width: 320px;
+  margin-left: 0px;
+  padding-left: 0px;
+  bottom: 160px;
+}
+.saisie_recherche_carte form {
+  right: 40px;
+  top: 10px;
+  padding-left: 10px;
+}
+.wpgmza_sl_main_div{
+  position: absolute;
+  z-index:9999;
+  padding-top: 15px;
+  padding-left: 3.5%;
+}
+.wpgmza_sl_main_div label{
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.wpgmza_sl_main_div input[type="text"]{
+  width: 180px;
+}
+.wpgmza_sl_main_div input[type="button"] {
+  height: 40px;
+  width: 40px;
+  top:42px;
+  left: 230px;
+}
+/* Fin carte style Google */
+}
+
+
+
 /*BREADCRUMB STYLE*/
 
 #breadcrumbs li.separator{

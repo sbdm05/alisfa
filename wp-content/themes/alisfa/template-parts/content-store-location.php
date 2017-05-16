@@ -1,3 +1,12 @@
+<script type="text/javascript">
+
+
+var element = document.getElementById("carte_id");
+element.classList.add("saisie_recherche_carte");
+
+</script>
+
+
 <div class="bande bande_recherche_carte">
   <div class="container">
     <div class="titre_recherche_carte">
@@ -6,7 +15,7 @@
   </div>
 
 
-  <div class="carte">
+  <div id="carte_id" class="carte">
   <?php echo do_shortcode( '[wpgmza id="1"]' ); ?>
   </div>
 
