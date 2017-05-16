@@ -2,12 +2,10 @@
 Theme Name: Petite Enfance
 Theme URI: http://www.petiteenfance.fr
 Author: Alisfa
-Author URI: http://alisfa.fr
+Author URI: http://www.alisfa.fr
 Description: Theme pour le site de la Petite Enfance
 Version: 1.0.0
-License URI: LICENSE
 Text Domain: alisfa
-
 */
 
 li .bouton_quiz_sb2 {
@@ -47,8 +45,9 @@ cursor: pointer;
   padding: 0 15px;
 }
 
+
 .wpgmza_sl_main_div input[type="button"] {
-  color: #15748F;
+  color: transparent!important;
   background: #15748F;
   border: none;
   height: 40px;
@@ -56,13 +55,13 @@ cursor: pointer;
   margin-left: 10px;
   float: left;
   border-radius: 0;
-  background-image: url("<?php echo get_template_directory_uri(); ?>/images/picto_cible.png")!important;
+  background-image: url("./images/picto_cible.png")!important;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .wpgmza_sl_main_div input[type="button"]:hover {
-  color: #15748F;
+  color: #FFF;
     background: #15748F;
   border: none;
   height: 40px;
