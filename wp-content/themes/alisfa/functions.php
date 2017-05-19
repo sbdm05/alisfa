@@ -165,6 +165,21 @@ function the_breadcrumb() {
 
 function alisfa_scripts() {
   wp_enqueue_script( 'meta-box-image', get_template_directory_uri() . '/inc/meta-box-image.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'meta-box-image', get_template_directory_uri() . '/inc/meta-box-video.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/fancybox/helpers/jquery.fancybox-buttons.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/fancybox/helpers/jquery.fancybox-media.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/fancybox/helpers/jquery.fancybox-thumbs.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/fancybox/helpers/jquery.fancybox-thumbs.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/fancybox/jquery.fancybox.js', array(), '1.0.0', true );
+
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/fancybox/jquery.fancybox.pack.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/jquery-migrate.min.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/jquery.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/jquery.smartmenus-addon.js', array(), '1.0.0', true );
+
+  wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/javascript/jquery_lib/jquery.smartmenus.min.js', array(), '1.0.0', true );
+
+
   wp_enqueue_style( 'alisfa_style', get_stylesheet_uri());
   wp_enqueue_style( 'alisfa_style_base', get_template_directory_uri() . '/css/base.css');
   wp_enqueue_style( 'alisfa_style_editor-style', get_template_directory_uri() . '/css/editor-style.css');
@@ -184,6 +199,10 @@ require get_template_directory() . '/inc/customizer.php';
 
 require get_template_directory() . '/inc/meta-boxes.php';
 
+
+
+
+/**FANCYBOX*/
 
 
 

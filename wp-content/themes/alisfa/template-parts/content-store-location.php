@@ -1,10 +1,4 @@
-<script type="text/javascript">
 
-
-var element = document.getElementById("carte_id");
-element.classList.add("saisie_recherche_carte");
-
-</script>
 
 
 <div class="bande bande_recherche_carte">

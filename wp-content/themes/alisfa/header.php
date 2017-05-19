@@ -54,11 +54,9 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/javascript/jquery_lib/jquery.smartmenus.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/javascript/jquery_lib/jquery.smartmenus-addon.js"></script>
 
-<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
-
 <script type="text/javascript">
   jQuery.noConflict();
-  jQuery(document).ready(function(){
+  jQuery(document).ready(function(jQuery){
 
     jQuery('.fancybox').fancybox({
       padding : 0,

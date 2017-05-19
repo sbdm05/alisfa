@@ -49,6 +49,8 @@ get_header(); ?>
     </div><!-- Fin page -->
   </div><!-- Fin container -->
 </div><!-- Fin bande -->
+
+
 <!-- DECOUPE PHP - Fin de "inc_fermeture_page (container et bande)" - début de "inc_additionnelle1" -->
 <div class="bande bande_grise">
   <!-- TEMPLATE PART VIDEOS-->
@@ -57,54 +59,58 @@ get_header(); ?>
 
 <!-- END TEMPLATE PART VIDEOS-->
 </div><!-- Fin bande -->
+
+
 <!-- DECOUPE PHP - Fin de "inc_additionnelle1" - début de "inc_additionnelle2" -->
 <div class="bande bande_blanche">
   <div class="container">
     <div class="enveloppe videos">
 
       <a href="
-           <?php
 
-                  // Retrieves the stored value from the database
-                  $meta_value = get_post_meta( get_the_ID(), 'meta-url', true );
+                            <?php
 
-                  // Checks and displays the retrieved value
-                  if( !empty( $meta_value ) ) {
-                      echo $meta_value;
-                  }
+                            // Retrieves the stored value from the database
+                            $meta_value = get_post_meta( get_the_ID(), 'meta-video', true );
 
-              ?>" class="cadre_video fancybox fancybox.iframe">
+                            // Checks and displays the retrieved value
+                            if( !empty( $meta_value ) ) {
+                                echo $meta_value;
+                            }
 
-        <img src="
+                        ?>" class="cadre_video fancybox fancybox.iframe">
 
-          <?php
 
-                  // Retrieves the stored value from the database
-                  $meta_value = get_post_meta( get_the_ID(), 'meta-image', true );
+                <img src="
 
-                  // Checks and displays the retrieved value
-                  if( !empty( $meta_value ) ) {
-                      echo $meta_value;
-                  }
+                  <?php
 
-            ?>" />
+                          // Retrieves the stored value from the database
+                          $meta_value = get_post_meta( get_the_ID(), 'meta-image', true );
 
-        <div class="titre_cadre_video_presentation">Présentation</div>
-        <div class="legende_cadre_video_presentation">
-          <?php
+                          // Checks and displays the retrieved value
+                          if( !empty( $meta_value ) ) {
+                              echo $meta_value;
+                          }
 
-                  // Retrieves the stored value from the database
-                  $meta_value = get_post_meta( get_the_ID(), 'meta-text', true );
+                    ?>" />
 
-                  // Checks and displays the retrieved value
-                  if( !empty( $meta_value ) ) {
-                      echo $meta_value;
-                  }
+                <div class="titre_cadre_video_presentation">Présentation</div>
+                <div class="legende_cadre_video_presentation">
+                  <?php
 
-          ?>
+                          // Retrieves the stored value from the database
+                          $meta_value = get_post_meta( get_the_ID(), 'meta-text', true );
 
-        </div>
-        <div class="bouton_lecture_video"></div>
+                          // Checks and displays the retrieved value
+                          if( !empty( $meta_value ) ) {
+                              echo $meta_value;
+                          }
+
+                  ?>
+
+                </div>
+                <div class="bouton_lecture_video"></div>
       </a>
 
       <!--

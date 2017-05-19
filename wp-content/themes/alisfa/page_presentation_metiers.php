@@ -13,13 +13,6 @@ get_header(); ?>
             <?php the_content(); ?>
           <?php endwhile; ?>
 
-           <div class="conteneur_boutons_metier">
-            <div class="bouton_metier"><a href="#">Animateur</a></div>
-            <div class="bouton_metier"><a href="#">Directeur</a></div>
-            <div class="bouton_metier"><a href="#">Auxiliaire de puériculture</a></div>
-            <div class="bouton_metier"><a href="#">Educateur de jeunes enfants</a></div>
-          </div>
-
         </div>
       </section><!-- Fin colonne principale -->
 <!-- DECOUPE PHP - Fin du contenu principal - début de "inc_fermeture_page (container et bande)" -->
